@@ -2,7 +2,14 @@ import pandas as pd
 from cpdb_api import request
 
 # List of countries
-country_list = ["Germany", "France", "United Kingdom", "Italy", "Spain", "Netherlands", "Belgium"]
+country_list = [  "RWA", # Rwanda: Primary case study (Unitary, High Vulnerability)
+  "DEU", # Germany: Global North leader (Federal, High Mitigation Stringency)
+  "IND", # India: Global South power (Federal, High Growth/Sectoral Complexity)
+  "BRA", # Brazil: Land-Use Focus (Federal, High Biodiversity/Adaptation Significance)
+  "ZAF", # South Africa: Just Transition Model (Unitary, Coal-to-Green Transition focus)
+  "JPN", # Japan: Vulnerable North (Unitary, Technology-led Adaptation)
+  "CAN"  # Canada: Federal Resource Exporter (Federal, Mitigation/Adaptation tension)
+  ]
 
 def fetch_country_bulk(country):
     print(f"Fetching full history for: {country}")
@@ -10,6 +17,7 @@ def fetch_country_bulk(country):
     # Initialize the request
     r = request.Request()
     r.set_country(country)
+    r.set_decision_date
     # No date or status filters applied to get the full history
     
     try:
@@ -21,7 +29,6 @@ def fetch_country_bulk(country):
         return None
 
 # Execute the calls and combine results
-# This replaces map_dfr from R's tidyverse
 results = [fetch_country_bulk(c) for c in country_list]
 
 # Filter out None values and concatenate into a single master DataFrame
