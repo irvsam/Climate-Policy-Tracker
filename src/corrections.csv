@@ -1,0 +1,10 @@
+text_features,classification,verified
+"Kigali Amendment on HFCs Rwanda  Energy service demand reduction and resource efficiency, Non-energy use",mitigation only,True
+"Canadian Agricultural Adaptation Program Canada (2014) Grants and subsidies
+Agriculture and forestry	
+""The Canadian Agricultural Adaptation Program (CAAP) (2014-2019) is a five-year, $50.3 million program providing non-repayable contributions for industry-led projects that help the agriculture, agri-food, and agri-based products sector to adapt and remain competitive.""",adaptation only,True
+"EU CBAM Certificate Mandate Requirement for importers of steel, cement, and hydrogen to purchase carbon certificates reflecting embedded emissions starting Jan 2026.",mitigation only,True
+Mekong Delta Salinity Shield Construction of automated sluice gates and dikes to prevent saltwater intrusion into rice paddies due to rising sea levels.,adaptation only,True
+Belém Technology Program A UN-led initiative to transfer decentralized solar and cooling technologies to urban heat islands in developing nations.,both,False
+National Seed Sovereignty Act Establishing regional gene banks to preserve drought-resistant indigenous crops for 2026-2030 food security.,adaptation,False
+Aviation ReFuel 2026 Mandatory 2% Sustainable Aviation Fuel (SAF) blending limit for all flights departing from major international hubs.,mitigation only,True
